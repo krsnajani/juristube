@@ -1,5 +1,7 @@
 # JurisTube
 
+![JurisTube User Interface](assets/screenshot.png)
+
 ## 1. Description
 JurisTube is a self-hosted software application to search and watch academic videos.
 The application helps researchers find lectures, symposia, and book discussions in legal theory and the humanities.
@@ -15,6 +17,7 @@ The system does not use commercial recommendation algorithms.
 - You can play videos directly with the MPV media player or in the web browser.
 
 ## 3. Directory Structure
+- `assets/`: Media files for documentation.
 - `config/`: Configuration files in JSON format.
   - `scholars.json`: Names of scholars grouped by discipline.
   - `channels.json`: Institutional YouTube channels and priority tiers.
