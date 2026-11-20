@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Oxford Faculty of Law",
+    "url": "https://www.youtube.com/@OxfordLawFaculty",
+    "tier": 1,
+    "subjects": ["law", "jurisprudence", "public-law"]
+  },
+  {
+    "name": "Cambridge Faculty of Law",
+    "url": "https://www.youtube.com/@CambridgeLaw",
+    "tier": 1,
+    "subjects": ["law", "jurisprudence"]
+  },
+  {
+    "name": "Harvard Law School",
+    "url": "https://www.youtube.com/@HarvardLawSchool",
+    "tier": 1,
+    "subjects": ["law", "constitutional-law"]
+  },
+  {
+    "name": "Yale Law School",
+    "url": "https://www.youtube.com/@YaleLawSchool",
+    "tier": 1,
+    "subjects": ["law", "legal-theory"]
+  },
+  {
+    "name": "LSE Public Events",
+    "url": "https://www.youtube.com/@LSEpublicevents",
+    "tier": 1,
+    "subjects": ["political-economy", "social-theory", "law"]
+  },
+  {
+    "name": "UCL Laws",
+    "url": "https://www.youtube.com/@UCLLaws",
+    "tier": 1,
+    "subjects": ["law", "jurisprudence"]
+  },
+  {
+    "name": "NALSAR University of Law",
+    "url": "https://www.youtube.com/@NALSARUniversity",
+    "tier": 1,
+    "subjects": ["indian-law", "constitutional-law"]
+  },
+  {
+    "name": "NLSIU Bangalore",
+    "url": "https://www.youtube.com/@NLSIUBangalore",
+    "tier": 1,
+    "subjects": ["indian-law"]
+  },
+  {
+    "name": "Vidhi Centre for Legal Policy",
+    "url": "https://www.youtube.com/@viaborvidhi",
+    "tier": 1,
+    "subjects": ["indian-law", "legal-policy"]
+  },
+  {
+    "name": "Supreme Court of India",
+    "url": "https://www.youtube.com/@supremecourtofindia",
+    "tier": 1,
+    "subjects": ["indian-law", "constitutional-law"]
+  },
+  {
+    "name": "Gresham College",
+    "url": "https://www.youtube.com/@GreshamCollege",
+    "tier": 1,
+    "subjects": ["law", "history", "philosophy"]
+  },
+  {
+    "name": "Max Planck Institute (Comparative Public Law)",
+    "url": "https://www.youtube.com/@mpilheidelberg",
+    "tier": 2,
+    "subjects": ["comparative-law", "public-law"]
+  },
+  {
+    "name": "Berkman Klein Center",
+    "url": "https://www.youtube.com/@BerkmanKleinCenter",
+    "tier": 2,
+    "subjects": ["internet-law", "technology", "freedom"]
+  }
+]

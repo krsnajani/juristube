@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Verfassungsblog",
+    "url": "https://verfassungsblog.de/feed/",
+    "subjects": ["constitutional-law", "comparative-law"]
+  },
+  {
+    "name": "Balkinization",
+    "url": "https://balkin.blogspot.com/feeds/posts/default?alt=rss",
+    "subjects": ["constitutional-law", "legal-theory"]
+  },
+  {
+    "name": "Opinio Juris",
+    "url": "https://opiniojuris.org/feed/",
+    "subjects": ["international-law"]
+  },
+  {
+    "name": "EJIL:Talk!",
+    "url": "https://www.ejiltalk.org/feed/",
+    "subjects": ["international-law"]
+  },
+  {
+    "name": "Indian Constitutional Law and Philosophy",
+    "url": "https://indconlawphil.wordpress.com/feed/",
+    "subjects": ["indian-constitutional-law"]
+  },
+  {
+    "name": "Legal Theory Blog (Lawrence Solum)",
+    "url": "https://lsolum.typepad.com/legaltheory/atom.xml",
+    "subjects": ["jurisprudence", "legal-theory"]
+  }
+]

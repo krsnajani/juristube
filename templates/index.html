@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JurisTube</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>JurisTube</h1>
+    <p>Personal library of legal &amp; humanities lectures</p>
+    <p><small>Keyboard: <kbd>/</kbd> search &nbsp;·&nbsp; <kbd>r</kbd> shuffle &nbsp;·&nbsp; <kbd>Esc</kbd> close</small></p>
+  </header>
+
+  <nav>
+    <button class="active" onclick="setTab('humanities', this)">Law &amp; Humanities</button>
+    <button onclick="setTab('scholars', this)">Scholars</button>
+    <button onclick="setTab('longs', this)">Longs (&gt;60m)</button>
+    <button onclick="setTab('starred', this)">Starred</button>
+    <button onclick="setTab('all', this)">Full Archive</button>
+  </nav>
+
+  <div class="filter-bar">
+    <input id="search-input" type="text" placeholder="Search title, scholar, topic… (press /)" oninput="loadVideos()">
+    <select id="disc-select" onchange="loadVideos()">
+      <option value="">All disciplines</option>
+      <option value="constitutional-law">Constitutional Law</option>
+      <option value="indian-constitutional-history-legal-studies">Indian Constitutional History &amp; Legal Studies</option>
+      <option value="subaltern-studies-postcolonial">Subaltern Studies &amp; Postcolonial Theory</option>
+      <option value="judicial-figures-constitutional">Judicial Lectures &amp; Colloquia</option>
+      <option value="comparative-public-law">Comparative Public Law</option>
+      <option value="jurisprudence">Jurisprudence</option>
+      <option value="political-philosophy">Political Philosophy</option>
+      <option value="social-theory">Social Theory / Psychoanalysis</option>
+      <option value="psychoanalysis-critical-theory">Psychoanalysis &amp; Critical Theory</option>
+      <option value="history-intellectual">Intellectual History</option>
+      <option value="economics-political-economy">Political Economy</option>
+      <option value="media-technology-law">Tech &amp; Information Law</option>
+    </select>
+    <button onclick="loadVideos(true)" title="Shuffle">&#8635; Shuffle</button>
+  </div>
+
+  <p class="meta"><span id="result-count">Loading…</span></p>
+
+  <div id="video-grid" class="video-grid"></div>
+
+  <!-- Detail modal -->
+  <div id="video-modal" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <div id="modal-title" class="modal-title"></div>
+          <div id="modal-channel" style="font-size:0.82em; color:#555; margin-top:3px;"></div>
+        </div>
+        <button class="modal-close" onclick="closeModal()">close</button>
+      </div>
+      <div class="modal-player">
+        <iframe id="modal-iframe" allowfullscreen></iframe>
+      </div>
+      <div class="modal-info">
+        <p id="modal-summary"></p>
+        <div class="modal-actions">
+          <button id="modal-mpv-btn">Copy mpv command</button>
+          <button id="modal-star-btn">☆ Star</button>
+          <a id="modal-yt-link" href="#" target="_blank">Open on YouTube ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
